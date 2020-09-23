@@ -23,3 +23,22 @@ const kButtonTextStyle = TextStyle(
   fontSize: 20,
   fontWeight: FontWeight.w600,
 );
+
+const kGreenCategoryTextStyle = TextStyle(
+  color: Color(0xFF24D876),
+  fontSize: 22,
+  fontWeight: FontWeight.bold,
+);
+
+const kYellowCategoryTextStyle = TextStyle(
+  color: Colors.yellow,
+  fontSize: 22,
+  fontWeight: FontWeight.bold,
+);
+
+const kResultTextStyle = TextStyle(
+  fontSize: 100,
+  fontWeight: FontWeight.bold,
+);
+
+const kBiggerTextStyle = TextStyle(fontSize: 22);
