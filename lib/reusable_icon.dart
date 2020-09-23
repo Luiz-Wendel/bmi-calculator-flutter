@@ -21,7 +21,7 @@ class ReusableIcon extends StatelessWidget {
         ),
         Text(
           label,
-          style: kTextStyle,
+          style: kLabelTextStyle,
         )
       ],
     );

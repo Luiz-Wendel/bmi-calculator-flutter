@@ -74,7 +74,7 @@ class _InputPageState extends State<InputPage> {
                 children: <Widget>[
                   Text(
                     'HEIGHT',
-                    style: kTextStyle,
+                    style: kLabelTextStyle,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -87,7 +87,7 @@ class _InputPageState extends State<InputPage> {
                       ),
                       Text(
                         'cm',
-                        style: kTextStyle,
+                        style: kLabelTextStyle,
                       )
                     ],
                   ),
@@ -126,7 +126,7 @@ class _InputPageState extends State<InputPage> {
                       children: <Widget>[
                         Text(
                           'WEIGHT',
-                          style: kTextStyle,
+                          style: kLabelTextStyle,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -139,7 +139,7 @@ class _InputPageState extends State<InputPage> {
                             ),
                             Text(
                               'kg',
-                              style: kTextStyle,
+                              style: kLabelTextStyle,
                             )
                           ],
                         ),
@@ -179,7 +179,7 @@ class _InputPageState extends State<InputPage> {
                       children: <Widget>[
                         Text(
                           'AGE',
-                          style: kTextStyle,
+                          style: kLabelTextStyle,
                         ),
                         Text(
                           age.toString(),
@@ -216,11 +216,22 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
-          Container(
-            color: kPinkColor,
-            margin: EdgeInsets.only(top: 10),
-            width: double.infinity,
-            height: kBottomContainerHeight,
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, '/result');
+            },
+            child: Container(
+              child: Center(
+                child: Text(
+                  'RESULT',
+                  style: kButtonTextStyle,
+                ),
+              ),
+              color: kPinkColor,
+              margin: EdgeInsets.only(top: 10),
+              width: double.infinity,
+              height: kBottomContainerHeight,
+            ),
           ),
         ],
       ),
