@@ -21,5 +21,5 @@ const kLabelTextStyle = TextStyle(
 
 const kButtonTextStyle = TextStyle(
   fontSize: 20,
-  fontWeight: FontWeight.w900,
+  fontWeight: FontWeight.w600,
 );
