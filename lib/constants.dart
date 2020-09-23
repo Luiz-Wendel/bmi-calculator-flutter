@@ -6,6 +6,7 @@ const kInactiveCardColor = Color(0xFF111328);
 const kPinkColor = Color(0xFFEB1555);
 const kPinkShadeColor = Color(0x29EB1555);
 const kInactiveSliderColor = Color(0xFF8D8E98);
+const kButtonFillColor = Color(0xFF4C4F5E);
 
 const kNumberTextStyle = TextStyle(
   fontSize: 50,
